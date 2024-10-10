@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --text-primary: #2f4799;
+  --text-size: 5rem;
+}
+.button-hover:hover {
+  transform: scale(1.05) translateZ(10px); /* Adjust the scale and Z translation as needed */
+}
+.nav-item:hover,
+.nav-item:focus,
+.nav-item:active {
+  color: var(--text-primary); /* Primary color */
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
